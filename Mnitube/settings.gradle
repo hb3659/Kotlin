@@ -1,0 +1,2 @@
+rootProject.name='Mnitube'
+include ':app'

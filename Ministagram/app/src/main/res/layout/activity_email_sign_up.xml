@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EmailSignUpActivity"
+    android:background="@drawable/staback">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/stasignlogo"
+        android:layout_marginTop="90dp"/>
+
+    <EditText
+        android:id="@+id/user_email_input_box"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerInParent="true"
+        android:background="#fafafa"
+        android:gravity="center"
+        android:hint="E-Mail"
+        android:textColorHint="#8C8C8C" />
+
+    <EditText
+        android:password="true"
+        android:id="@+id/user_pass_input_box"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/user_email_input_box"
+        android:background="#fafafa"
+        android:gravity="center"
+        android:hint="Password"
+        android:textColorHint="#8C8C8C" />
+
+    <EditText
+        android:password="true"
+        android:id="@+id/user_pass_input_box_2"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/user_pass_input_box"
+        android:background="#fafafa"
+        android:gravity="center"
+        android:hint="Re-enter Password"
+        android:textColorHint="#8C8C8C" />
+
+    <ImageView
+        android:id="@+id/registerBtn"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:src="@drawable/stabutton"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/user_pass_input_box_2"/>
+
+    <ImageView
+        android:id="@+id/loginBtn"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:src="@drawable/stabutton2"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/registerBtn"/>
+
+<!--    <Button-->
+<!--        android:id="@+id/registerBtn"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:text="회원가입" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/loginBtn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:text="이미 계정이 있으신가요?" />-->
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/mel_song_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:paddingLeft="16dp"
+        android:id="@+id/mel_song_title"
+        android:text="test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/mel_song_img"
+        android:layout_centerVertical="true"
+        android:layout_weight="1"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/mel_play"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/play"
+        android:textSize="20dp" />
+    <ImageView
+        android:id="@+id/mel_pause"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/pause"
+        android:textSize="20dp"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

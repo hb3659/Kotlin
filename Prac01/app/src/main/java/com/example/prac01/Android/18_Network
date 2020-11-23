@@ -1,0 +1,45 @@
+
+
+네트워크
+-> 통신
+
+Database <----> Server <----> Client(app, web...)
+
+Local Database 의 한계
+- 동기화가 어렵다
+- 상호작용이 불가능하다
+
+서버와 통신하는 방법
+- 해당 url 로 요청한다
+- 인증정보를 보낸다
+- JSON 형식을 사용해서 data 를 보낸다
+- JSON (JavaScript Object Notation)
+    -> JavaScript 에서 객체를 만들 때 사용하는 표현식이다
+
+JSON 형식
+- [] : List
+- {} : 객체
+    - "" : 문자열
+    - "" 없으면 : 숫자
+
+JSON Parsing
+ -> Json 을 코틀린이나 자바가 이해할 수 있게 변형하는 과정
+
+Serializable (직렬화)
+ -> 자바 시스템 내부에서 object 를 외부에서
+    사용할 수 있도록 byte 형태로 데이터를 바꾸는 것.
+
+ 코틀린이나 자바가 이해할 수 있는 틀에 집어 넣는다 (class)
+
+Request Type
+ - GET : 정보 요청         -> 200 OK
+ - POST : 정보 추가 요청    -> 201 Created
+ - DELETE : 정보 삭제 요청
+ - PUT : 정보 수정 요청
+
+Status Code
+ - 200 대 -> 처리가 잘 됐다
+
+Library
+ - Volly
+ - RetroFit
